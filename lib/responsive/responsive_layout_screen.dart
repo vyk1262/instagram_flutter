@@ -14,7 +14,7 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth > screenSize) {
+        if (constraints.maxWidth > webScreenSize) {
           return webScreenLayout;
         } else {
           return mobileScreenLayout;
